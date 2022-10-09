@@ -21,13 +21,22 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10000;
+    z-index: 1000;
+    flex-direction: column;
+}
+@media only screen and (max-width: 400px){
+    header{padding: 10px;}
+    header ul{justify-content: space-between;}
+    header ul li{margin-left: 5px;}
+    .sec{
+        padding: 20px;
+    }
 }
 header .logo{
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -100,7 +109,6 @@ section img#montain_front{
     background: #fff;
     color: #2b1055;
     font-size: 1.5em;
-    /* z-index: 9; */
     transform: translateY(100px);
 }
 
@@ -117,4 +125,10 @@ section img#montain_front{
 .sec p{
     font-size: 1.2em;
     color: #fff;
+}
+@media only screen and (max-width: 400px){
+    header{padding: 10px;}
+    header ul{justify-content: space-between;}
+    header ul li{margin-left: 5px;}
+    .sec{padding: 20px;}
 }
